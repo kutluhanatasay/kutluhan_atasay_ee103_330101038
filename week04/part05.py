@@ -10,4 +10,3 @@ for a in range(1,1001):
                 break
 
 print(a, b, c)
-# A = 255

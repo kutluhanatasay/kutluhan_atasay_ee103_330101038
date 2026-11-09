@@ -10,6 +10,10 @@
 - **`quiz01/`**
   - `quiz-1-kutluhan-atasay.py`
 
+- **`quiz02/`**
+  - `quiz-2-kutluhan-atasay.py`
+  - `terminaltask.py`
+
 - **`week03/`**
   - `calc_factorial_for.py`
   - `calc_factorial_while.py`
@@ -33,3 +37,8 @@
   - `float_error.py`
   - `gauss_check.py`
   - `multiply_all.py`
+
+- **`week06/`**
+  - `secret_data.py`
+  - `sqrt_aproximation.py`
+  - `sqrt_bisection_search.py`

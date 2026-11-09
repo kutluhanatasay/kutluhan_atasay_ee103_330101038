@@ -1,20 +1,18 @@
 from secret_data import secret_number
 
-ub = max( 0.1, secret_number) # this is the upper boundary
+ub = max(0.1, secret_number) # this is the upper boundary
 lb = 0.0 # lower bound
-guess = 0
-range = int(ub)
+guess = (ub + lb) / 2
+epsilon = 0.01
 
+num_guesses = 0
 
-for i in range(1, range):
-
-    guess = (ub + lb)/2
-
-    if (secret_number < guess**2):
+while abs(guess**2 - secret_number) >= epsilon:
+    num_guesses += 1
+    if guess**2 > secret_number:
         ub = guess
-    elif ( guess**2 < secret_number):
+    else:
         lb = guess
-    elif (guess**2 == secret_number):
-        print(f"square root is: {guess} found in: {i} steps")
-        break
+    guess = (ub + lb) / 2
 
+print(f"square root is: {guess} found in: {num_guesses} steps")
