@@ -17,8 +17,7 @@ def integrate(func, steps=1000):
 
 
 def f_x_twice(x, f_x):
-
-
+    
     return f_x(f_x(x))
 
 print(estimate_derivative(take_square, 3))
